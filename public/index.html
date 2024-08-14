@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFC Letter Service</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1>NFC Letter Service</h1>
+    </header>
+    <main>
+        <form id="issue-form">
+            <label for="nickname">Your Nickname:</label>
+            <input type="text" id="nickname" name="nickname" required>
+            
+            <label for="issue">Select an issue:</label>
+            <select id="issue" name="issue" required>
+                <option value="">--Select an issue--</option>
+                <!-- Options will be dynamically inserted by JavaScript -->
+            </select>
+            <div id="issue-details"></div>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="result">
+            <!-- Result will be displayed here -->
+        </div>
+    </main>
+    <script src="/script.js"></script>
+</body>
+</html>

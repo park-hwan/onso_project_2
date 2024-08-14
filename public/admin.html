@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - NFC Letter Service</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Login</h1>
+    </header>
+    <main>
+        <form id="admin-login-form">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <div id="admin-content" style="display:none;">
+            <h2>Submissions</h2>
+            <ul id="submission-list"></ul>
+        </div>
+    </main>
+    <script src="/admin.js"></script>
+</body>
+</html>
